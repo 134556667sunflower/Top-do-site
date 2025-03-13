@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aulas de Idiomas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Cores e estilo principal */
+:root {
+    --cor-primaria: #023264; /* Azul escuro da VFS */
+    --cor-secundaria: #f3f3f3; /* Fundo neutro */
+    --cor-texto: #ffffff; /* Texto branco */
+    --cor-destaque: #e1e1e1; /* Cinza claro */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: center;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    padding: 20px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Tabela estilizada */
+.tabela-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    overflow-x: auto; /* Rolagem horizontal caso necessário */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--cor-texto);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid var(--cor-destaque);
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+}
+
+/* Benefícios */
+.beneficios {
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: var(--cor-texto);
+    color: var(--cor-primaria);
+    margin: 5px auto;
+    padding: 12px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+}
+
+footer a {
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    ul li {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Aulas de Idiomas</h1>
+        <p>Aprenda Inglês, Espanhol e Português com qualidade e flexibilidade!</p>
+    </header>
+
+    <section class="precos">
+        <h2>Preçário</h2>
+        <div class="tabela-container">
+            <table>
+                <tr>
+                    <th>Idioma</th>
+                    <th>Preço por Aula</th>
+                    <th>Pacote Mensal</th>
+                </tr>
+                <tr>
+                    <td>Inglês</td>
+                    <td>10.000 KZ</td>
+                    <td>90.000 KZ (10 aulas)</td>
+                </tr>
+                <tr>
+                    <td>Espanhol</td>
+                    <td>9.000 KZ</td>
+                    <td>85.000 KZ (10 aulas)</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td>8.000 kz</td>
+                    <td>75.000 KZ (10 aulas)</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section class="beneficios">
+        <h2>Benefícios das Aulas</h2>
+        <ul>
+            <li>Aulas personalizadas conforme o seu nível</li>
+            <li>Horários flexíveis e adaptáveis</li>
+            <li>Material didático incluído</li>
+            <li>Professores altamente qualificados</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Interessado? <a href="contato.html">Entre em contato!</a></p>
+    </footer>
+</body>
+</html>
